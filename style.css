@@ -1,28 +1,30 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f5f7fb;
-    color: #222;
-    line-height: 1.6;
-}
-
 nav {
+    font-family: "georgia", serif;
     background-color: #ffff;
     border-bottom: 1px solid #e5e7ed;
     padding: 18px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
     z-index: 1000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#Why ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 20px;
+    text-align: center;
+    list-style-position: inside;
+    padding: 0;
 }
 
 nav ul {
@@ -32,29 +34,37 @@ nav ul {
 }
 
 nav ul li a{
+    font-family: "nanum myeongjo";
     text-decoration: none;
-    color: #333;
+    color: #2f2924;
     font-weight: bold;
 }
 
 nav ul li a:hover{
-    color: #7c3aed;
+    color: #9a7e63;
 }
 
 .logo {
     font-size: 20px;
     font-weight: bold;
-    color: #1e2a78;
+    color: #2f2924;
 }
 
 .hero {
-    background: #4c00ff;
-background: linear-gradient(90deg, rgba(76, 0, 255, 1) 0%, rgba(125, 105, 255, 1) 35%, rgba(198, 184, 255, 1) 100%);
-    color: white;
+    background: #f8f5f0;
+background: linear-gradient(135deg, #f8f5f0 0%, #f1e8dd 100%);
+    color: #2f2924;
     padding: 100px 20px;
     text-align: center;
-    animation: fadeUp 2s ease;
+
+    background-image: url(https://jw0u6edydcrjvkyb.private.blob.vercel-storage.com/Form%20candle.jpg?vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfancwdTZFZHlEQ3Jqdmt5QiIsIm93bmVySWQiOiJ0ZWFtX0diMmt5T3ZpZXY2QzVzQmtZcEVMeGJ0USIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgxNzU4Mzg2MTA4LCJpYXQiOjE3ODE3MTUxODYzMTB9.NVVwu86lCKTmmRs6TaoLPAkGQ4SFVuewkqEDoKEU6cc&vercel-blob-signature=ZroUfuNoZNETRB4zUZ20mVD9ULuby2qwsnsbwQL14cg);
+    background-size: cover;
+    background-position: center 70%;
+    
+    
 }
+
+
 
 .small-title{
     font-size: 14px;
@@ -63,15 +73,20 @@ background: linear-gradient(90deg, rgba(76, 0, 255, 1) 0%, rgba(125, 105, 255, 1
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-family: "georgia", serif;
+    font-size: 60px;
     margin-bottom: 20px;
     line-height: 1.3;
 }
 
 .hero-description {
-    font-size: 18px;
-    width: 650px;
+    font-family: "nanum myeongjo";
+    font-size: 16px;
+    width: 100%;
+    max-width: 650px;
     margin: 0 auto 30px auto;
+    text-align: center;
+    
 }
 
 .btn{
@@ -84,7 +99,7 @@ background: linear-gradient(90deg, rgba(76, 0, 255, 1) 0%, rgba(125, 105, 255, 1
 
 .first{
     background-color: white;
-    color: #1e2a78;
+    color: #2f2924;
 
 }
 
@@ -93,22 +108,29 @@ background: linear-gradient(90deg, rgba(76, 0, 255, 1) 0%, rgba(125, 105, 255, 1
 }
 
 .second{
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #2f2924;
+    color: #2f2924;
 }
 
 .second:hover{
-    background-color: white;
-    color: #1e2a78;
+    background-color: #f3f4f6;
+    color: #2f2924;
 }
 
-
+body {
+    background-color: #fcfaf6;
+    color: #222;
+    line-height: 1.6;
+    padding-top: 70px;
+}
 
 section{
+    text-align: center;
+    font-family: "nanum myeongjo";
     background-color: white;
-    width: 1000px;
+    width: 100%;
     margin: 60px auto;
-    padding: 40px;
+    padding: 40px 40px 80px 40px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -116,17 +138,17 @@ section{
 section h2{
     font-size: 28px;
     margin-bottom: 30px;
-    color: #1e2a78;
+    color: #2f2924;
 }
 
 .skills span{
     display: inline-block;
-    background-color: #eef2ff;
+    background-color: #f6f3f0;
     padding: 8px 14px;
     border-radius: 20px;
     margin: 6px;
     font-size: 14px;
-    color: #4338ca;
+    color: #9a7e63;
 }
 
 #services ul{
@@ -136,67 +158,101 @@ section h2{
 footer{
     text-align: center;
     padding: 30px 20px;
-    color: #666;
+    color: #2f2924;
     font-size: 14px;
 }
 
 .card {
-    width: 270px;
+    width: 230px;
     border: 1px solid #ececec;
     border-radius: 18px;
     padding: 20px;
-    transition: box-shadow 0.3s, transform 0.3s;
-}
-
-.card:hover{
-    transform: translate(0, -8px);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .card h3 {
-    color: #222;
+    color: #2f2924;
     margin-bottom: 15px;
 }
 
 .card p {
-    color: #555;
+    color: #73685e;
     margin-bottom: 12px;
 }
 
-.card a {
-    color: #7c3aed;
+.card span {
+    color: #73685e;
     text-decoration: none;
     font-weight: bold;
 }
 
-.card a:hover{
+.card h3:hover{
     text-decoration: underline;
 }
 
 .card-image {
     height: 140px;
-    background-color: #e0bfff;
+    background-color: #fcfaf6;
     border-radius: 14px;
     font-size: 22px;
     font-weight: bold;
-    color: #1e2a78;
+    color: #2f2924;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 18px;
 }
 
+
+
+
+.ribbon {
+    background-image: url("https://jw0u6edydcrjvkyb.private.blob.vercel-storage.com/ribbon.jpg?vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfancwdTZFZHlEQ3Jqdmt5QiIsIm93bmVySWQiOiJ0ZWFtX0diMmt5T3ZpZXY2QzVzQmtZcEVMeGJ0USIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgxNzU4NTE5NzM4LCJpYXQiOjE3ODE3MTUzMTk5NDZ9.1FNm7CKNoX5k_HeuxnzEwLqMpMgTcHA8TdlBLs-RtOI&vercel-blob-signature=Eec5rPbXquAkUOzbqdrK93e12_m7Qh_Pn1QOZmyPdDA");
+    background-size: cover;
+}
+
+.moon {
+    background-image: url("https://jw0u6edydcrjvkyb.private.blob.vercel-storage.com/moon.jpg?vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfancwdTZFZHlEQ3Jqdmt5QiIsIm93bmVySWQiOiJ0ZWFtX0diMmt5T3ZpZXY2QzVzQmtZcEVMeGJ0USIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgxNzU4NDkzMDE0LCJpYXQiOjE3ODE3MTUyOTMyMTR9.RNlAyse92qfnwy_YsLAG7YEGN_EKGBbEgAKTQKgGMRU&vercel-blob-signature=sC2Py-uIP2ydhvMtgkPqHIvYUCcmU6UrhWuPNI_8mF8");
+    background-size: cover;
+}
+
+.shell {
+    background-image: url("https://jw0u6edydcrjvkyb.private.blob.vercel-storage.com/shell.jpg?vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfancwdTZFZHlEQ3Jqdmt5QiIsIm93bmVySWQiOiJ0ZWFtX0diMmt5T3ZpZXY2QzVzQmtZcEVMeGJ0USIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgxNzU4NTMxNDMzLCJpYXQiOjE3ODE3MTUzMzE2MzV9.1v1uMrbYVw6wyPwI2smBNO9c0LckWcbHzQqIlxsePBg&vercel-blob-signature=m1Lsy21OCZaMBpKMJtShWM7PKbyRWr8gGws--dBz1uo");
+    background-size: cover;
+}
+
+.tulip {
+    background-image: url("https://jw0u6edydcrjvkyb.private.blob.vercel-storage.com/tulip.jpg?vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfancwdTZFZHlEQ3Jqdmt5QiIsIm93bmVySWQiOiJ0ZWFtX0diMmt5T3ZpZXY2QzVzQmtZcEVMeGJ0USIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgxNzU4NTQ4NDk3LCJpYXQiOjE3ODE3MTUzNDg3MDF9.k-1KRkp7su15YZ3P5w6Hcq0QsTioVy3bc1d_dadmJpM&vercel-blob-signature=6w7uWTn4Y6BFEnBT4sAy_v3f7snQ64xuchG5UrM6meg");
+    background-size: cover;
+}
+
+.wave {
+    background-image: url("https://jw0u6edydcrjvkyb.private.blob.vercel-storage.com/wave.jpg?vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfancwdTZFZHlEQ3Jqdmt5QiIsIm93bmVySWQiOiJ0ZWFtX0diMmt5T3ZpZXY2QzVzQmtZcEVMeGJ0USIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgxNzU4NTY1OTI4LCJpYXQiOjE3ODE3MTUzNjYxMjl9.skkIhmPLNeNx4cpHsbSYNIKuevgvLa-oWoLBSgzkIWE&vercel-blob-signature=cpx4Lk0a_n0ehbQkLB1sps75TESBj3nj1SGXMyaLOfI");
+    background-size: cover;
+}
+
+.bubble {
+    background-image: url("https://jw0u6edydcrjvkyb.private.blob.vercel-storage.com/bubble.jpg?vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfancwdTZFZHlEQ3Jqdmt5QiIsIm93bmVySWQiOiJ0ZWFtX0diMmt5T3ZpZXY2QzVzQmtZcEVMeGJ0USIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgxNzU4NDczNDQ1LCJpYXQiOjE3ODE3MTUyNzM2NDR9.0fM-kHJL-fI3TPSmgf5cHjv4S8O1QS3TjuD2Dpg49qM&vercel-blob-signature=AYc0PZaEK8vjX4DdI179hHuoI_U1iHNT0WuKLulKgYg");
+    background-size: cover;
+}
+
+
+
+
+
+
 .portfolio-grid {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+
+    justify-content: center;
 }
 
 .contact-form label{
     display: block;
     margin-top: 16px;
     margin-bottom: 8px;
-    color: #333;
+    color: #73685e;
     font-weight: bold;
 }
 
@@ -208,35 +264,18 @@ footer{
     border: 1px solid #d1d5db;
     border-radius: 12px;
     font-size: 15px;
+
+    
 }
 
 .contact-form input[type="submit"]{
 
     margin-top: 20px;
-    background-color: #1e2a78;
+    background-color: #a2876f;
     color: #ffffff;
     width: 200px;
     font-size: 16px;
     border: none;
     padding: 14px 24px;
-    transition: background-color 0.3s, transform 0.3s;
 }
 
-.contact-form input[type="submit"]:hover{
-    background-color: #7c3aed;
-    transform: translate(0, -4px);
-}
-
-
-@keyframes fadeUp {
-    from{
-        opacity: 0;
-        transform: translate(0, 25px);
-    }
-    to{
-        opacity: 1;
-        transform: translate(0,0);
-
-    }
-    
-}
